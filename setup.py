@@ -5,12 +5,12 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="tokon",
-    version="0.1.0",
-    author="TOON Format Contributors",
-    description="Official Python implementation of the TOON serialization format",
+    version="1.1.0",
+    author="Tokon Format Contributors",
+    description="Token-Optimized Serialization Format for AI-Native Applications",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/toon-format/toon",
+    url="https://github.com/LavSarkari/tokon",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 4 - Beta",
@@ -32,11 +32,11 @@ setup(
             "pytest-cov>=4.0.0",
         ],
     },
-    entry_points={
-        "console_scripts": [
-            "tokon=toon.cli:main",
-        ],
-    },
+          entry_points={
+              "console_scripts": [
+                  "tokon=tokon.cli:main",
+              ],
+          },
     include_package_data=True,
     zip_safe=False,
 )

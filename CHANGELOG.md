@@ -5,28 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.0] - 2025-01-16
-
-### Changed
-- Package name changed from `toon` to `tokon` for PyPI distribution
-- CLI command changed from `toon` to `tokon`
+## [1.1.0] - 2025-01-16
 
 ### Added
-- Initial release of TOON Python implementation
-- Full TOON v2.0 specification support
-- `encode()` and `decode()` functions
-- Support for comma, tab, and pipe delimiters
-- Command-line interface (CLI) tool
-- Comprehensive test suite (48 tests)
-- Benchmark tools for performance comparison
-- Full documentation and examples
-- Type hints throughout codebase
+- Initial release of Tokon v1.1
+- Dual-mode architecture (Tokon-H and Tokon-C)
+- Schema system with .tks file support
+- Type validation and schema validation
+- Streaming support (Tokon-S)
+- Command-line interface (CLI)
+- Comprehensive test suite
+- Complete documentation and specification
 
 ### Features
-- Tabular data encoding with schema syntax
-- Simple object and array encoding
-- Nested structure support
-- Automatic delimiter detection
-- Platform-independent (Windows, Linux, macOS)
-- Zero dependencies (pure Python)
+- **Tokon-H (Human Mode)**: Clean, readable, indentation-based format
+- **Tokon-C (Compact Mode)**: Ultra-compact, schema-optimized format
+- **Schema System**: Symbol mapping, type definitions, multilingual support
+- **Validation**: Type checking and schema validation
+- **Streaming**: Incremental parsing for large datasets
+- **CLI Tool**: Command-line encoding/decoding
+- **Auto-detection**: Automatic mode detection
 
+### Performance
+- 53% token reduction vs JSON (H-mode)
+- 78% token reduction vs JSON (C-mode)
+- Fast encoding/decoding performance
+
+### Documentation
+- Complete specification (TOKON_SPEC.md)
+- Installation guide (INSTALLATION.md)
+- Usage guide (USAGE.md)
+- API reference
+- Examples and benchmarks

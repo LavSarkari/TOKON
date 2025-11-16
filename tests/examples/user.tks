@@ -1,0 +1,47 @@
+schema user {
+  symbols {
+    name → n
+    age → a
+    active → x
+    tags → t
+    email → e
+    settings → s
+    theme → th
+    notifications → nt
+  }
+  
+  types {
+    name: str
+    age: int
+    active: bool
+    tags: list[str]
+    email: str
+    settings: object
+    theme: str
+    notifications: bool
+  }
+  
+  languages {
+    en: {
+      name: "name"
+      age: "age"
+      active: "active"
+    }
+    es: {
+      name: "nombre"
+      age: "edad"
+      active: "activo"
+    }
+  }
+  
+  defaults {
+    active: true
+    theme: "light"
+  }
+  
+  required {
+    name
+    age
+  }
+}
+
