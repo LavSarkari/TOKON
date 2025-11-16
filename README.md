@@ -1,7 +1,8 @@
-# TOON
+# pytoon
+
 🎒 **Token-Oriented Object Notation (TOON)** – Compact, human-readable, schema-aware JSON for LLM prompts. Python implementation.
 
-[![PyPI version](https://badge.fury.io/py/toon.svg)](https://badge.fury.io/py/toon)
+[![PyPI version](https://badge.fury.io/py/pytoon.svg)](https://badge.fury.io/py/pytoon)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 Official Python implementation of the [TOON serialization format](https://github.com/toon-format/toon).
@@ -15,13 +16,13 @@ TOON is a lightweight, human-readable serialization format designed for simplici
 ## Installation
 
 ```bash
-pip install toon
+pip install pytoon
 ```
 
 For development:
 
 ```bash
-pip install toon[dev]
+pip install pytoon[dev]
 ```
 
 ## Command Line Interface
@@ -30,22 +31,22 @@ The package includes a CLI tool for encoding and decoding:
 
 ```bash
 # Encode JSON to TOON
-echo '{"name": "Alice", "age": 30}' | toon encode
+echo '{"name": "Alice", "age": 30}' | pytoon encode
 
 # Decode TOON to JSON
-echo 'name: Alice\nage: 30' | toon decode
+echo 'name: Alice\nage: 30' | pytoon decode
 
 # Encode with tab delimiter
-echo '{"items": [{"id": 1}]}' | toon encode --delimiter tab
+echo '{"items": [{"id": 1}]}' | pytoon encode --delimiter tab
 
 # Decode from file
-toon decode < data.toon
+pytoon decode < data.toon
 
 # Pretty print JSON output
-toon decode --pretty < data.toon
+pytoon decode --pretty < data.toon
 ```
 
-See `toon --help` for more options.
+See `pytoon --help` for more options.
 
 ## Quick Start
 
