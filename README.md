@@ -1,4 +1,4 @@
-# tokon
+# tokon -TOON
 
 🎒 **Token-Oriented Object Notation (TOON)** – Compact, human-readable, schema-aware JSON for LLM prompts. Python implementation.
 
