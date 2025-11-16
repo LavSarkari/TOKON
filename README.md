@@ -1,5 +1,4 @@
-# toon-python
-
+# TOON
 🎒 **Token-Oriented Object Notation (TOON)** – Compact, human-readable, schema-aware JSON for LLM prompts. Python implementation.
 
 [![PyPI version](https://badge.fury.io/py/toon.svg)](https://badge.fury.io/py/toon)
